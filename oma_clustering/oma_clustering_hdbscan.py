@@ -7,9 +7,13 @@ Author: Maximillian Weil
 # TODO: Add automatic hyperparameter tuner
 from dataclasses import dataclass, field
 from typing import Union
+
 import pandas as pd
-from sklearn.cluster import HDBSCAN  # Importing HDBSCAN instead of DBSCAN
-from oma_clustering.utils import data_selection, column_multiplier, validate_data, predict_clusters
+from sklearn.cluster import HDBSCAN  # type: ignore
+
+from oma_clustering.utils import (column_multiplier, data_selection,
+                                  predict_clusters, validate_data)
+
 
 @dataclass
 class ModeClusterer_HDBSCAN:  # Renamed class to reflect the use of HDBSCAN
