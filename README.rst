@@ -42,25 +42,25 @@ Usage
 
 .. code-block:: python
 
-clusterer_DBSCAN = ModeClusterer_DBSCAN(
-        eps = 5,
-        min_samples = 100,
-        multipliers = {"frequency": 35, "size": 0.5, "damping": 1},
-        index_divider = 20000,
-        cols = ['frequency', 'size', 'damping'],
-        min_size = 5.0,
-        max_damping = 5.0
-)
+        clusterer_DBSCAN = ModeClusterer_DBSCAN(
+                eps = 5,
+                min_samples = 100,
+                multipliers = {"frequency": 35, "size": 0.5, "damping": 1},
+                index_divider = 20000,
+                cols = ['frequency', 'size', 'damping'],
+                min_size = 5.0,
+                max_damping = 5.0
+        )
 
-clusterer_HDBSCAN = ModeClusterer_HDBSCAN(
-        min_cluster_size = 100,
-        min_samples = 100,
-        multipliers = {"frequency": 500, "size": 0.5, "damping": 1},
-        index_divider = 20000,
-        cols = ['frequency', 'size', 'damping'],
-        min_size = 5.0,
-        max_damping = 5.0
-)
+        clusterer_HDBSCAN = ModeClusterer_HDBSCAN(
+                min_cluster_size = 100,
+                min_samples = 100,
+                multipliers = {"frequency": 500, "size": 0.5, "damping": 1},
+                index_divider = 20000,
+                cols = ['frequency', 'size', 'damping'],
+                min_size = 5.0,
+                max_damping = 5.0
+        )
 ..
 
 * Data description
