@@ -84,7 +84,7 @@ celerybeat-schedule
 .env
 
 # data
-data/
+/data/
 
 # virtualenv
 .venv
