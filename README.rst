@@ -144,16 +144,12 @@ Resulting clustering
         :align: center
         :alt: Example of a resulting clustering using ModeClusterer_DBSCAN.
 
-Identified clusters using DBSCAN.
-..
 
 * Example of a resulting clustering using ModeClusterer_HDBSCAN:
 .. figure:: figures/clustering/OMA7/HDBSCAN_clustering.png
         :align: center
         :alt: Example of a resulting clustering using ModeClusterer_HDBSCAN.
 
-Identified clusters using HDBSCAN.
-..
 
 Credits
 -------
