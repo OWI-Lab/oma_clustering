@@ -97,44 +97,44 @@ Example
 
 .. code-block:: python
 
-from oma_clustering import ModeClusterer_DBSCAN
+        from oma_clustering import ModeClusterer_DBSCAN
 
-clusterer_DBSCAN = ModeClusterer_DBSCAN(
-        eps = 5,
-        min_samples = 100,
-        multipliers = {"frequency": 35, "size": 0.5, "damping": 1},
-        index_divider = 20000,
-        cols = ['frequency', 'size', 'damping'],
-        min_size = 5.0,
-        max_damping = 5.0
-)
+        clusterer_DBSCAN = ModeClusterer_DBSCAN(
+                eps = 5,
+                min_samples = 100,
+                multipliers = {"frequency": 35, "size": 0.5, "damping": 1},
+                index_divider = 20000,
+                cols = ['frequency', 'size', 'damping'],
+                min_size = 5.0,
+                max_damping = 5.0
+        )
 
-clusterer_DBSCAN.fit(oma_result)
+        clusterer_DBSCAN.fit(oma_result)
 
-clustered_modes_DBSCAN = clusterer_DBSCAN.predict(min_cluster_size=200)
-clustered_modes_DBSCAN = clustered_modes_DBSCAN[clustered_modes_DBSCAN.labels != -1]
+        clustered_modes_DBSCAN = clusterer_DBSCAN.predict(min_cluster_size=200)
+        clustered_modes_DBSCAN = clustered_modes_DBSCAN[clustered_modes_DBSCAN.labels != -1]
 ..
 
 * Here is a complete example of using ModeClusterer_HDBSCAN:
 
 .. code-block:: python
 
-from oma_clustering import ModeClusterer_HDBSCAN
+        from oma_clustering import ModeClusterer_HDBSCAN
 
-clusterer_HDBSCAN = ModeClusterer_HDBSCAN(
-        min_cluster_size = 100,
-        min_samples = 100,
-        multipliers = {"frequency": 500, "size": 0.5, "damping": 1},
-        index_divider = 20000,
-        cols = ['frequency', 'size', 'damping'],
-        min_size = 5.0,
-        max_damping = 5.0
-)
+        clusterer_HDBSCAN = ModeClusterer_HDBSCAN(
+                min_cluster_size = 100,
+                min_samples = 100,
+                multipliers = {"frequency": 500, "size": 0.5, "damping": 1},
+                index_divider = 20000,
+                cols = ['frequency', 'size', 'damping'],
+                min_size = 5.0,
+                max_damping = 5.0
+        )
 
-clusterer_HDBSCAN.fit(oma_result)
+        clusterer_HDBSCAN.fit(oma_result)
 
-clustered_modes_HDBSCAN = clusterer_HDBSCAN.predict(min_cluster_size=200)
-clustered_modes_HDBSCAN = clustered_modes_HDBSCAN[clustered_modes_HDBSCAN.labels != -1]
+        clustered_modes_HDBSCAN = clusterer_HDBSCAN.predict(min_cluster_size=200)
+        clustered_modes_HDBSCAN = clustered_modes_HDBSCAN[clustered_modes_HDBSCAN.labels != -1]
 ..
 
 Resulting clustering
