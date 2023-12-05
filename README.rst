@@ -35,10 +35,10 @@ Usage
 
 * Initializing the class with set of hyperparameters
 
-- The hyperparameters are used to cluster the dataframe.
-- The multipliers are used to scale the columns of the dataframe before clustering.
-- Ensure the multipliers have the same keys as the columns of the dataframe.
-- The index_divider is used to divide the index of the dataframe to get the index of the dataframe used for clustering.
+** The hyperparameters are used to cluster the dataframe.
+** The multipliers are used to scale the columns of the dataframe before clustering.
+** Ensure the multipliers have the same keys as the columns of the dataframe.
+** The index_divider is used to divide the index of the dataframe to get the index of the dataframe used for clustering.
 
 .. code-block:: python
 
