@@ -29,8 +29,8 @@ Usage
 * Importing the class
 .. code-block:: python
 
-    from oma_clustering import ModeClusterer_DBSCAN
-    from oma_clustering import ModeClusterer_HDBSCAN
+    from oma_clustering.oma_clustering_dbscan import ModeClusterer_DBSCAN
+    from oma_clustering.oma_clustering_hdbscan import ModeClusterer_HDBSCAN
 ..
 
 * Initializing the class with set of hyperparameters
@@ -97,7 +97,7 @@ Example
 
 .. code-block:: python
 
-        from oma_clustering import ModeClusterer_DBSCAN
+        from oma_clustering.oma_clustering_dbscan import ModeClusterer_DBSCAN
 
         clusterer_DBSCAN = ModeClusterer_DBSCAN(
                 eps = 5,
@@ -119,7 +119,7 @@ Example
 
 .. code-block:: python
 
-        from oma_clustering import ModeClusterer_HDBSCAN
+        from oma_clustering.oma_clustering_hdbscan import ModeClusterer_HDBSCAN
 
         clusterer_HDBSCAN = ModeClusterer_HDBSCAN(
                 min_cluster_size = 100,
