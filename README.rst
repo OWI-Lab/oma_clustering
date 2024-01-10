@@ -9,7 +9,7 @@ The clustering is done using the DBSCAN or HDBSCAN algorithm.
 The hyperparameters of the clustering algorithm are adapted based on physical knowledge of the structure and interprator supervision as illustrated in the figure below.
 
 * Flowchart illustrating the automatic setting of the configuration using the clustering results:
-.. figure:: figures/cooncept/Flowchart_Initialisation_clustering.png
+.. figure:: figures/concept/Flowchart_Initialisation_clustering.png
         :align: center
         :alt: Flowchart illustrating the automatic setting of the configuration using the clustering results.
 
