@@ -6,6 +6,12 @@ OMA Clustering
 Python package to cluster the outputs of an Operational Modal Analysis.
 The clusters serve as a basis for automatically setting the configuration of further mode tracking.
 The clustering is done using the DBSCAN or HDBSCAN algorithm.
+The hyperparameters of the clustering algorithm are adapted based on physical knowledge of the structure and interprator supervision as illustrated in the figure below.
+
+* Flowchart illustrating the automatic setting of the configuration using the clustering results:
+.. figure:: figures/cooncept/Flowchart_Initialisation_clustering.png
+        :align: center
+        :alt: Flowchart illustrating the automatic setting of the configuration using the clustering results.
 
 
 Features
